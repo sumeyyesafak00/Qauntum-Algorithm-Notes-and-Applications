@@ -8,7 +8,7 @@
 
 
 #? Amaç
-#* Aranan elemana faz uygulayıp(-1) belirlemek ve daha sonra diffuser ile genliklerle oynayıp hadmard kapısının yapıcı-yıkıcı gücüyle genlikleri kırdırıp aranan durumun kalmasını sağlamak
+#* Aranan elemana faz uygulayıp(-1) belirlemek ve daha sonra diffuser ile genliklerle oynayıp hadamard kapısının yapıcı-yıkıcı gücüyle genlikleri kırdırıp aranan durumun kalmasını sağlamak
 
 #? Karmaşıklık
 #* N=2^n elemanlı bir listede aranan tek bir ∣w⟩ elemanını bulmak için:
@@ -66,7 +66,7 @@ qc.cz(1,0) #* ya da qc.cz(0,1), cz kapısı simetrik olduğu için farketmez
 #? 3.Adım
 qc.h([0, 1])  # 1. Aşama
 #* Hadamard kapısı uniter kapıdır HH†=I yani 2 defa uygulanırsa eski haline döner, süperpozisyon öncesi kübit |00> durumundaydı , yani |00> durumuna döner ama...
-#! ...ilk başta aradığımız kübiti eksi ile işaretledik sistemde 1 eksi var, bu durum hadamard kapısının yıkıcı-yapıcı durumunu bozar, sistem 100% olarak |00> durumuna çökmez ,uniter kapı olmasına (2 defa uygulanınca eski haline denmesi gerekmesine) rağmen halen süperpozisyon durumunda kalır ancak sistem(ihtimaller) |00> durumuna yoğunlaşır
+#! ...ilk başta aradığımız kübiti eksi ile işaretledik sistemde 1 eksi var, bu durum hadamard kapısının yıkıcı-yapıcı durumunu bozar, sistem 100% olarak |00> durumuna çökmez ,uniter kapı olmasına (2 defa uygulanınca eski haline denmesi gerekmesine) rağmen halen süperpozisyon durumunda kalır ancak sistem(genlikler) |00> durumuna yoğunlaşır
 
 #! sistemde 1 ya da 3 eksi varsa hadamard kapısının yapıcı-yıkıcı durumu bozulur; 0,2 ya da 4 tane eksi varsa yapıcı-yıkıcı durumunu korur
 
